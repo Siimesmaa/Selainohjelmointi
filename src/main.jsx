@@ -19,9 +19,7 @@ const notes = [
   }
 ]
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <App notes={notes} />
-)
+
 
 const result = notes.map(note => note.id)
 console.log(result)
@@ -36,3 +34,7 @@ console.log(result3)
 
 const result4 = notes.filter(note => note.important == true)
 console.log(result4)
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <App notes={notes} />
+)
