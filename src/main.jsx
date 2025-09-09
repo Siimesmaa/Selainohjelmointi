@@ -22,3 +22,17 @@ const notes = [
 ReactDOM.createRoot(document.getElementById('root')).render(
   <App notes={notes} />
 )
+
+const result = notes.map(note => note.id)
+console.log(result)
+
+const result2 = notes.map(note => note.content)
+console.log(result2)
+
+const result3 = notes.map(note => {
+    '<li>' + note.content + '</li>'
+})
+console.log(result3)
+
+const result4 = notes.filter(note => note.important == true)
+console.log(result4)
